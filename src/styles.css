@@ -85,8 +85,8 @@ nav a{
 }
 
 #welcome{
-    padding-top:5rem;
-    padding-bottom: 1rem;
+    padding-top:3rem;
+    padding-bottom: 0.5rem;
     
 }
 #welcome h2{
@@ -100,6 +100,7 @@ nav a{
     font-weight: bold;
 }
 
+
 #slider{
     margin-top:3.5rem;
 }
@@ -110,6 +111,7 @@ nav a{
     padding: 3rem 2.5rem 3rem 2.5rem;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top:1.2rem;
+    margin-left: 0.1rem;
     
 }
 
@@ -124,7 +126,7 @@ nav a{
     color:#f2f2f2;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    margin:2rem 0 0.2rem 0rem;
+    margin:1rem 0 0.2rem 0rem;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -141,19 +143,52 @@ nav a{
 }
 
 /*segunda seccion: profile*/
+#cuerpo p{
+    color: #eeeeee;
+    
+    
+}
+#cuerpo h3{
+    color: #999999;
+    
+}
 
 #profile{
-    height: 640px;
+    min-height: 640px;
     background-image: url(./assets/img/fondo_res_06.jpg);
-    overflow: hidden;
+    padding: 3rem 1rem 3rem 1rem;
+     
 }
+#geolocation p{
+    font-size: 0.8rem;
+    color: #999999;
+    font-style: italic; 
+}
+#geolocation h4{
+    color: #999999;
+    
+}
+#geolocation button{
+    padding: auto;
+    height: 3rem;
+    color:#f2f2f2;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    margin:0.2rem 0 0.2rem 0rem;
+}
+.fotoPerfil{
+    width: 8rem;
+    height: 8rem;
+}
+
+
 
 /*footer*/
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
+/*section {
     padding: 60px 0;
-}
+}*/
 
 section .section-title {
     text-align: center;
@@ -163,6 +198,7 @@ section .section-title {
 }
 #footer {
     background: #007b5e !important;
+    padding: 60px 0;
 }
 #footer h5{
 	padding-left: 10px;
@@ -227,9 +263,43 @@ section .section-title {
 
 /*mapa */
 
-#map{
-    width: 200px;
-    height: 150px;
+/*
+iframe{
+    width: 100%;
+    height: 60%;
+    
+       
+}
+*/
+
+
+/*Estilos importados del mapa*/
+.ol-control button {
+    background-color: #f8f8f8 !important;
+    color: #000000 !important;
+    border-radius: 0px !important;
+}
+.ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+    background-color: rgba(255,255,255,.4) !important;
+    padding: 3px !important;
+}
+.ol-scale-line {
+    background: none !important;
+}
+.ol-scale-line-inner {
+    border: 2px solid #ff0101 !important;
+    border-top: none !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    color: black !important;
+}
+
+
+#map {
+    width: 20rem;
+    height: 20rem;
+    margin: 0px auto;
     border: 1px solid red;
-    margin: 5px;
+
+    /*width: 1110px;
+    height: 619px;*/
 }

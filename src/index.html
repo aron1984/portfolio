@@ -3,9 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Portalejo</title>
+
+  <!--Mapa-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="./resources/ol.css">
+  <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+  <link rel="stylesheet" href="./resources/qgis2web.css">
+
+  <!--Angular defect-->
+
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!--Style map-->
+  <style>
+    .search-layer {
+      top: 65px;
+      left: .5em;
+    }
+    .ol-touch .search-layer {
+      top: 80px;
+    }
+    </style>
 </head>
 <body>
   
@@ -13,5 +37,6 @@
     <app-root></app-root>
     
   
+    
 </body>
 </html>
