@@ -1,8 +1,10 @@
-/* cabecera */
-#cabecera{
-    background-image: url("./assets/img/fondo_res_04.jpg");
-    height: 640px;
-}
+/*text responisive*/
+/*
+p {
+    font-size: calc(100% + 1vw + 1vh);
+  }
+*/
+
 .container-fluid{
     margin-left: 1.75rem;
     margin-right: 1.75rem;
@@ -85,7 +87,7 @@ nav a{
 }
 
 #welcome{
-    padding-top:3rem;
+    padding-top:6rem;
     padding-bottom: 0.5rem;
     
 }
@@ -102,7 +104,7 @@ nav a{
 
 
 #slider{
-    margin-top:3.5rem;
+    margin-top:1.5rem;
 }
 
 .carousel-item {
@@ -153,12 +155,94 @@ nav a{
     
 }
 
+/* ============= PERFIL==============*/
+/*
 #profile{
-    min-height: 640px;
+    min-height: 30rem;
     background-image: url(./assets/img/fondo_res_06.jpg);
     padding: 3rem 1rem 3rem 1rem;
      
 }
+*/
+#profile svg{
+    color:#49B8CA;
+}
+.fotoPerfil{
+    width: 6rem;
+    height: 6rem;
+}
+
+h5{
+    color: #999999;
+}
+
+#profile p{
+    margin-bottom: 0.3rem;
+    color: #999999;
+    /*font-size: calc(100% + 1vw + 1vh);*/
+    
+}
+
+
+@media (min-width: 0px){
+        /* cabecera */
+    #cabecera{
+        background-image: url("./assets/img/curvas_06.jpg");
+        height: 640px;
+    }
+    #profile{
+        min-height: 30rem;
+        background-image: url(./assets/img/mapa_parana_06.jpg);
+        padding: 3rem 1rem 3rem 1rem;     
+    }
+    
+    #profile p {
+        font-size: 0.8rem; /*56px*/
+      }
+    
+    .bname {
+        font-size: 1.1rem;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    #geolocation{
+        margin-top:3rem;
+    }
+}
+
+@media (min-width: 360px){
+    /* cabecera */
+    #cabecera{
+        background-image: url("./assets/img/curvas_03.jpg");
+        height: 640px;
+    }
+
+    #profile{
+        min-height: 30rem;
+        background-image: url(./assets/img/mapa_parana_03.jpg);
+        padding: 3rem 1rem 3rem 1rem;     
+    }
+}
+
+@media (min-width: 768px){
+    #profile p {
+        font-size: 0.9rem; /*56px*/
+      }
+
+    .bname {
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    #geolocation{
+        margin-top:1.3rem;
+    }
+}
+
+
+
+
 #geolocation p{
     font-size: 0.8rem;
     color: #999999;
@@ -169,17 +253,14 @@ nav a{
     
 }
 #geolocation button{
-    padding: auto;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     height: 3rem;
-    color:#f2f2f2;
+    color:#999999;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     margin:0.2rem 0 0.2rem 0rem;
 }
-.fotoPerfil{
-    width: 8rem;
-    height: 8rem;
-}
+
 
 
 
@@ -197,7 +278,7 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #007b5e !important;
+    background: #181818 !important;
     padding: 60px 0;
 }
 #footer h5{
