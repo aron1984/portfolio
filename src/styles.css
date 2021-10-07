@@ -192,25 +192,46 @@ h5{
     }
     #profile{
         min-height: 30rem;
-        background-image: url(./assets/img/mapa_parana_06.jpg);
-        padding: 3rem 1rem 3rem 1rem;     
+        /*background-image: url("./assets/img/mapa_parana_06.jpg");*/
+        padding: 3rem 1rem 2rem 0.5rem;     
     }
     
     #profile p {
         font-size: 0.8rem; /*56px*/
+        text-align: justify;
       }
     
     .bname {
         font-size: 1.1rem;
-        color: whitesmoke;
+        color: #4D5656;
         font-weight: bold;
     }
     #geolocation{
-        margin-top:3rem;
+        margin-top:1rem;
+    }
+
+    #tools img{
+        width: 4rem;
+    }
+
+    #tools h3{
+        margin-top: 1.6rem;
+    }
+    #tools h4{
+        margin-top: 1rem;
+        color: #4D5656;
+    }
+
+    .buttonmore{
+        width: 100%;
+    }
+    #slider{
+        margin-top:1.5rem;
+        margin-right: 1rem;
     }
 }
 
-@media (min-width: 360px){
+@media (min-width: 361px){
     /* cabecera */
     #cabecera{
         background-image: url("./assets/img/curvas_03.jpg");
@@ -219,8 +240,15 @@ h5{
 
     #profile{
         min-height: 30rem;
-        background-image: url(./assets/img/mapa_parana_03.jpg);
+        /*background-image: url("./assets/img/mapa_parana_03.jpg");*/
         padding: 3rem 1rem 3rem 1rem;     
+    }
+    #geolocation{
+        margin-top:1.2rem;
+    }
+
+    .buttonmore{
+        width: 20rem;
     }
 }
 
@@ -236,7 +264,7 @@ h5{
     }
 
     #geolocation{
-        margin-top:1.3rem;
+        margin-top:0rem;
     }
 }
 
@@ -252,10 +280,10 @@ h5{
     color: #999999;
     
 }
-#geolocation button{
+.buttonmore{
     padding: 0.5rem 2rem 0.5rem 2rem;
     height: 3rem;
-    color:#999999;
+    color:whitesmoke;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     margin:0.2rem 0 0.2rem 0rem;
