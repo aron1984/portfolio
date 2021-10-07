@@ -212,6 +212,13 @@ h5{
 
     #tools img{
         width: 4rem;
+        transition:all 1.1s ease;
+    }
+
+    #tools img:hover{
+        transform: scale(125%);
+        transition:all 1.1s ease;
+        cursor: pointer;
     }
 
     #tools h3{
@@ -222,12 +229,25 @@ h5{
         color: #4D5656;
     }
 
+
     .buttonmore{
         width: 100%;
     }
     #slider{
         margin-top:1.5rem;
         margin-right: 1rem;
+    }
+
+    /*======README=======*/
+    #readme{
+        margin-top: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+    }
+
+    #readme p{
+        text-align: justify;
     }
 }
 
