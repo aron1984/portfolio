@@ -1,1 +1,75 @@
-<p>contact works!</p>
+
+<div id="contact">
+    <div id="contactCont" class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+
+                <h2>Contact</h2>
+
+                <p>You can get in touch directly from this reactive form made with Angular.<br>
+                    You can also contact me or follow me through my social networks.</p>
+            
+                <div id="redes" class="row mt-6">
+                    <div class="col"><a href="#"><img src="../../../assets/img/icons/github_A_web.svg" alt="GitHub"></a></div>
+                    <div class="col"><a href="#"><img src="../../../assets/img/icons/linkedin_A_web.svg" alt="Linkedin"></a></div>
+                    <div class="col"><a href="#"><img src="../../../assets/img/icons/instagram_A_web.svg" alt="Instagram"></a></div>
+                    <div class="col"><a href="#"><img src="../../../assets/img/icons/facebook_A_web.svg" alt="Facebook"></a></div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+
+                <form [formGroup]="formContact" (submit)="send()">
+
+                    <!-- ========== INPUT message ===========-->
+                    <div class="form-group mt-2">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="form-control " id="message" cols="30" rows="5" formControlName="message"></textarea>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-6">
+    
+                            <!-- ========== INPUT NAME ===========-->
+                            <div class="form-group mt-2">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" formControlName="name">
+                            </div>
+    
+                        </div>
+                        <div class="col-6">
+    
+                            <!-- ========== INPUT EMAIL ===========-->
+                            <div class="form-group mt-2">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" formControlName="email">
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    
+                    <!-- ========== button ===========-->
+                    <div class="row-12">
+                        
+                        <div class="col-12">
+                        <button id="sendMessage" [disabled]="formContact.invalid" type="button" class="btn btn-dark btn btn-block">Send</button>
+                        
+                        </div>
+    
+                    </div>
+                
+                
+    
+                </form>
+
+            </div>
+        </div>
+        
+
+        
+        
+
+    </div>
+</div>
