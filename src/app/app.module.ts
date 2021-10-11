@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ReadmeComponent } from './pages/readme/readme.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PorjectsComponent } from './pages/porjects/porjects.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MapaComponent } from './pages/mapa/mapa.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,15 @@ import { HomeComponent } from './pages/home/home.component';
     ReadmeComponent,
     ContactComponent,
     PorjectsComponent,
-    HomeComponent
+    HomeComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    LeafletModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

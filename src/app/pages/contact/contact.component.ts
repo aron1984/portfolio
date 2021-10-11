@@ -33,7 +33,11 @@ export class ContactComponent implements OnInit {
   }
 
   send(): any {
+    console.log("Message sent:")
     console.log(this.formContact.value);
+    
+    /*NOTE: */
+    /* REVIEW: investigar cómo hacer que los mensajes se almacenen en la base de datos, o lleguen al corrreo*/
   }
  
 }

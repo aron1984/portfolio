@@ -25,7 +25,7 @@
                     <!-- ========== INPUT message ===========-->
                     <div class="form-group mt-2">
                         <label for="message">Message</label>
-                        <textarea name="message" class="form-control " id="message" cols="30" rows="5" formControlName="message"></textarea>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="5" formControlName="message"></textarea>
                     </div>
     
                     <div class="row">
@@ -54,9 +54,11 @@
                     <div class="row-12">
                         
                         <div class="col-12">
-                        <button id="sendMessage" [disabled]="formContact.invalid" type="button" class="btn btn-dark btn btn-block">Send</button>
+                        <button name="sendMessage" id="sendMessage" [disabled]="formContact.invalid" type="submit" class="btn btn-dark btn btn-block">Send</button>
                         
                         </div>
+
+                        
     
                     </div>
                 

@@ -5,6 +5,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PorjectsComponent } from './pages/porjects/porjects.component';
 import { ProfileComponent } from './section/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MapaComponent } from './pages/mapa/mapa.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -12,6 +14,7 @@ const routes: Routes = [
   /*{ path: 'about', component....*/
   { path: 'readme',component: ReadmeComponent},
   { path: 'projects',component: PorjectsComponent},
+  { path: 'geography', component: MapaComponent},
   { path: 'contact', component: ContactComponent},
   { path: '**', pathMatch: 'full',redirectTo: ''}
 ];

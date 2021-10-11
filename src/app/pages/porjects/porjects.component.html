@@ -1,1 +1,79 @@
-<p>porjects works!</p>
+
+
+<div id="project">
+    <div class="tituloEncabezado">
+        <h2>Projects</h2>
+        <p>I share with you a quick list of my latest projects in different areas.</p>
+    </div>      
+    <div class="container">
+     
+        <div class="cardsProjects">
+            <h3>Design graphyic</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" *ngFor="let proyectosA of infoProject.project">
+                    <div class="card h-100">
+                        <img src="../../../assets/img/{{proyectosA.url}}.png" class="card-img-top" alt="{{proyectosA.name}}">
+                        <div class="card-body">
+                        <h5 class="card-title">{{proyectosA.name}}</h5>
+                        <h3 class="card-text">{{proyectosA.category}}</h3>
+                        <p class="card-text">{{proyectosA.descrip}}</p>
+                        <p class="card-text">@{{proyectosA.insta}}</p>
+                        <p class="card-text">{{proyectosA.web}}</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Designed in {{proyectosA.anio}}</small>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="cardsProjects">
+            <h3>Geography</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="cardsProjects">
+            
+            <h3>Drawing</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <p>La información de los proyectos presentados en las CARDAS de bootstrap, son solicitadas a una base de datos en FIREBASE a modo de ejemplo.</p>
+</div>
+
+

@@ -11,6 +11,7 @@ export class InfowdService {
   
  
   public persona: any [] = [];
+  public project: any [] = [];
   url: string;
 
   
@@ -19,6 +20,7 @@ export class InfowdService {
     console.log("servicio de infoPagina listo")
     this.url = General.url;
     this.cargarPersona(); 
+    this.getProject();
    
    }
 
@@ -37,5 +39,19 @@ export class InfowdService {
           console.log(<any>error);
       });
       
+   }
+
+   private getProject(){
+     this.http.get(this.url+'projects.json')
+      .subscribe( (res:any) => {
+        /*console.log(res);*///funcciona y por eso lo desactivo
+
+        this.project = res;
+       /* console.log(this.project); *///Esto funciona y por eso lo desavtio
+
+      },
+        error=>{
+          console.log(<any>error);
+        });
    }
 }
