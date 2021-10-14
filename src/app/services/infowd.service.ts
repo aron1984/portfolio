@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map } from 'leaflet';
 import { InfoWeb } from '../interface/infoweb.interface';
 import { General } from './general';
+
 
 
 @Injectable({
@@ -13,6 +15,7 @@ export class InfowdService {
   public persona: any [] = [];
   public project: any [] = [];
   url: string;
+  
 
   
   constructor( private http: HttpClient) { 
@@ -54,4 +57,6 @@ export class InfowdService {
           console.log(<any>error);
         });
    }
+
+   
 }

@@ -165,7 +165,7 @@ nav a{
 }
 */
 #profile svg{
-    color:#49B8CA;
+    color:#16c4f0;
 }
 .fotoPerfil{
     width: 6rem;
@@ -547,5 +547,24 @@ section .section-title {
 
     /*width: 1110px;
     height: 619px;*/
+}
+
+#mapa-leaflet{
+    width: 100%;
+    height: 40rem;
+}
+
+.mapaTitle{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.my-div-icon{
+    background-image: url('../src/assets/img/alejo_web.png');
+    width: 30px;
+}
+
+.imgPopup{
+    width: 100%;
 }
 
