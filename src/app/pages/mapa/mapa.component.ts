@@ -5,7 +5,10 @@ import * as L from 'leaflet';
 import { HttpClient } from '@angular/common/http';
 
 import { InfowdService } from 'src/app/services/infowd.service';
-import { cinesG } from 'src/assets/data/cinesgeoson';
+import * as Geo from '../../../assets/data/cinesgeoson'; //importo mi archivo geojson local
+import { cinesG } from '../../../assets/data/cinesgeoson';
+import { geoRecorrido } from '../../../assets/data/geolines';
+import { barrioAtraa } from '../../../assets/data/geoarea';
 
 
 
@@ -30,7 +33,7 @@ export class MapaComponent implements OnInit {
     
 
   ngOnInit(): void {
-
+    
     (Mapboxgl as typeof Mapboxgl).accessToken = environment.mapboxKey;
 
     this.mapa = new Mapboxgl.Map({
@@ -66,6 +69,8 @@ export class MapaComponent implements OnInit {
     
       }).addTo(map);
 
+     // REVIEW: Faltaría agregar las coordenadas del mouse, pero no es TAN IMPORTANTE POR AHORA. SALVO PARA UN PROYECTO WEB RELACIONADO A GEOGRAFIA.
+
       // seteamos el icono
       var myIcon = L.icon({
         iconUrl: '../../assets/img/icon_map1_web.svg',
@@ -83,14 +88,14 @@ export class MapaComponent implements OnInit {
           .openPopup();
 
           // creamos un círculo simulando un área de interés//
-
+/*
           var circle = L.circle([-31.741975, -60.486567], {
             color: '#1565C0',
             fillColor: '#27AE60',
             fillOpacity: 0.5,
             radius: 600
         }).addTo(map);
-
+*/
 
         // OTRO PUNTO DE INTERES
         /*==========PLAZA DE MAYO==========*/
@@ -111,27 +116,7 @@ export class MapaComponent implements OnInit {
             radius: 1200
         }).addTo(map);
 
-
-
-
-        /*==========COPIO Y PEGO UN ARCHIVO GEOJSON Y LO HAGO VARIABLE===========*/
-        // NOTE: ME FALTA IMPORTAR EL .GEOJSON Y PODER TRABAJARLO.
-
-        //creamos una variable GeoJson que tambien podríamos importarla de un archivo externo.
-
-        var myGeoJson: any = {
-          "type": "FeatureCollection",
-          "name": "cines_parana",
-          "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-          "features": [
-          { "type": "Feature", "properties": { "id": 1, "name": "Cine Círculo Paraná", "direccion": "Andrés Pazos 339", "url": "cine_circulo" }, "geometry": { "type": "Point", "coordinates": [ -60.524877855641378, -31.733216169914318 ] } },
-          { "type": "Feature", "properties": { "id": 2, "name": "Cine Rex Paraná", "direccion": "Monte Caseros 266","url": "cine_rex" }, "geometry": { "type": "Point", "coordinates": [ -60.530600694891064, -31.735428750822436 ] } },
-          { "type": "Feature", "properties": { "id": 3, "name": "Inst. Audiovisual ER", "direccion": "Greg. Mat. de San Martín 880","url": "instituto_audiovisual" }, "geometry": { "type": "Point", "coordinates": [ -60.523223480277458, -31.721803854549616 ] } }
-          ]
-          }
-
          
-          
          
           // NOTE: solucionado el cambio de iconos para los geojson
           // SE CREA UNA FUNCION DE CREAR ICONO
@@ -139,14 +124,17 @@ export class MapaComponent implements OnInit {
           var myIconFilm = L.icon({
             iconUrl: '../../assets/img/film.svg',
             iconSize: [20, 20], /*tamaño de lado por lado*/
-            iconAnchor: [40, 50], /*posicion horizontal y vertical respectivamente*/
-            popupAnchor: [-3, -50],
+            iconAnchor: [15, 20], /*posicion horizontal y vertical respectivamente: puede que al hacer zoom se vea desplazado, hay que tener cuidado.*/
+            popupAnchor: [-3, -25],
             
-            shadowSize: [68, 95],
-            shadowAnchor: [22, 94]
+            
         })
         return L.marker(latlng, { icon: myIconFilm })
       }
+
+      //--------------------------------------
+
+
        // create an options object that specifies which function will called on each feature
        // SE CREA UNA VARIABLE DE OPCIONES, QUE SE PASARÁ COMO SEGUNDO ARGUMENTO DESPUES.
        let myLayerOptions = {
@@ -157,10 +145,39 @@ export class MapaComponent implements OnInit {
         }
       
 
-      // create the GeoJSON layer
-      // SE PASA COMO SEGUNDO ARGUMENTO myLayerOptions que habiamo configuarado antes.
-      L.geoJSON(myGeoJson, myLayerOptions).addTo(map)
+        //--------- Creamos una variable y le asignamos el nombre del geojson importado.
+        var newGeoJson: any = cinesG;
+        L.geoJSON(newGeoJson, myLayerOptions).addTo(map);
 
+        //----------Creamos una variable para Lineas----------
+        var newGeoLines: any = geoRecorrido; 
+        L.geoJSON(newGeoLines, 
+          {
+            style: function (feature:any) {
+              return {color: feature.properties.stroke}
+          },}).addTo(map);
+
+        //----------Creamos una variable para poligonos-------
+        var newGeoPol: any = barrioAtraa;
+
+        
+
+        let myLayerOptionsPol = {
+          style: function (feature:any) {
+            return {color: feature.properties.color,
+                    fillColor:feature.properties.stroke}
+        },
+            onEachFeature: function (feature:any, layer:any) {
+            layer.bindPopup('<h5>'+feature.properties.name+'</h5S>');
+          }
+          }
+
+        L.geoJSON(newGeoPol, myLayerOptionsPol).addTo(map);
+
+
+      
+
+      
        // onEachFeature es una funcion de Leaflet para leer las propiedades de todos los elementos y así poder mostrar en pantalla
 /*
        var layerGroup = L.geoJSON(myGeoJson,  {

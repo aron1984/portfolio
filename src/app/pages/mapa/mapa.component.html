@@ -3,9 +3,15 @@
         <h2>Geography</h2>
         <p>In this section I will show you some works related to my knowledge of Geography and GIS, subjects in which I have graduated from UADER and specialized in UNC, CONAE, etc.</p>
     </div>  
-
+    <div class="container">
+    <div class="mapaTitle">
+        <h2>Map using Mapbox</h2>
+    </div>  
      <!--===========MAPA mapbox==========-->    
     <div id="mapa-mapbox"></div>
+    <p>
+        En este ejemplo de <span>Mapbox</span> vemos un emplazamiento de geometría punto, con un popup. Además, añadí una capa de tres puntos que fueron importadas en <span>Mapbox</span> desde un archivo GeoJson generado (Digitalizado) en QGIS.
+    </p>
     
     <div class="mapaTitle">
         <h2>Map using Leaflet</h2>
@@ -14,8 +20,9 @@
     <!--===========MAPA leaflet==========--> 
     <div id="mapa-leaflet"></div>  
 
-    <p>Leaflet me pareció más sencillo para generar el mapa. Me falga aún agregar un archivo GeoJson para visualizar distintas cosas, tipo PopUps e iformación. Puede ser de salas de cines.</p>
-    <div class="container">
+    <p>En cambio, en <span>Leaflet</span> lo que hice fue generar dos simples marcadores con codigo JavaScript, seteando las coordenas, el símbolo, y el popup. Además creé esos círculos, como zona de influencia a modo de ejemplo.</p>
+    <p>También use la variante de archivo <span>GeoJson</span>, pero en este caso convirtiéndolo en una variable. Y desde otro componente (uso Angular), lo importé. Setié las propiedades (estilos de simbología) y se añadieron al mapa.</p>
+    
         <!--===========MAPA Y TODO LO RELACIONADO A GEOGRAFIA===========-->    
               
     </div>
