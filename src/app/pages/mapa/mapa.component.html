@@ -4,26 +4,55 @@
         <p>In this section I will show you some works related to my knowledge of Geography and GIS, subjects in which I have graduated from UADER and specialized in UNC, CONAE, etc.</p>
     </div>  
     <div class="container">
-    <div class="mapaTitle">
-        <h2>Map using Mapbox</h2>
-    </div>  
-     <!--===========MAPA mapbox==========-->    
-    <div id="mapa-mapbox"></div>
-    <p>
-        En este ejemplo de <span>Mapbox</span> vemos un emplazamiento de geometría punto, con un popup. Además, añadí una capa de tres puntos que fueron importadas en <span>Mapbox</span> desde un archivo GeoJson generado (Digitalizado) en QGIS.
-    </p>
-    
-    <div class="mapaTitle">
-        <h2>Map using Leaflet</h2>
-    </div>  
+        <div class="mapaTitle">
+            <h2>Map using Mapbox</h2>
+        </div>  
 
-    <!--===========MAPA leaflet==========--> 
-    <div id="mapa-leaflet"></div>  
-
-    <p>En cambio, en <span>Leaflet</span> lo que hice fue generar dos simples marcadores con codigo JavaScript, seteando las coordenas, el símbolo, y el popup. Además creé esos círculos, como zona de influencia a modo de ejemplo.</p>
-    <p>También use la variante de archivo <span>GeoJson</span>, pero en este caso convirtiéndolo en una variable. Y desde otro componente (uso Angular), lo importé. Setié las propiedades (estilos de simbología) y se añadieron al mapa.</p>
+        <div class="row row-cols-12">
+            <div class="col-md-6 col-12">
+                <!--===========MAPA mapbox==========--> 
+                <div id="mapa-mapbox"></div>
+            </div>
+            <div class="col-md-6 col-12">
+                <p>
+                    En este ejemplo de <span>Mapbox</span> vemos un emplazamiento de geometría punto, con un popup. Además, añadí una capa de tres puntos que fueron importadas en <span>Mapbox</span> desde un archivo GeoJson generado (Digitalizado) en QGIS.
+                </p>
+                <p>Nótese que el marcador principal se puede mover por el mapa (Faltaría añadir una función que nos diga las coordenadas de ese marcador).</p>
+            </div>
+        </div>
+        
     
+    
+    
+        <div class="mapaTitle">
+            <h2>Map using Leaflet</h2>
+        </div>  
+
+        <div class="row row-col-12">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <p>En cambio, en <span>Leaflet</span> lo que hice fue generar dos simples marcadores con codigo JavaScript, seteando las coordenas, el símbolo, y el popup; pero uno de ellos lo podemos desplazar con el mouse. Además creé esos círculos, como zona de influencia a modo de ejemplo.</p>
+                <p>También use la variante de archivo <span>GeoJson</span>, pero en este caso convirtiéndolo en una variable. Y desde otro componente (uso Angular), lo importé. Setié las propiedades (estilos de simbología) y se añadieron al mapa.</p>
+                
+                
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2">
+               <!--===========MAPA leaflet==========--> 
+               <div id="mapa-leaflet"></div>  
+            </div>
+        </div>
+
+        <!--===========SEPARADOR===========-->
+        <hr class="separador">
+
         <!--===========MAPA Y TODO LO RELACIONADO A GEOGRAFIA===========-->    
-              
+        <div class="mapaTitle">
+            <h2>Maps created with QGIS</h2>
+            <p>Una colección de mapas de distintos temas utilizando QGIS. En cada CARDS mencionaré los porgramos que utilicé para crearlos.</p>
+        </div> 
+        <div class="row row-col-12">
+            <div class="col">
+
+            </div>
+        </div>
     </div>
 </div>

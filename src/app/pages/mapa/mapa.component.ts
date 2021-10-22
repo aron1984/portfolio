@@ -149,7 +149,7 @@ export class MapaComponent implements OnInit {
         var newGeoJson: any = cinesG;
         L.geoJSON(newGeoJson, myLayerOptions).addTo(map);
 
-        //----------Creamos una variable para Lineas----------
+        //----------Creamos una variable para Lineas y la importamos de geoRecorrido----------
         var newGeoLines: any = geoRecorrido; 
         L.geoJSON(newGeoLines, 
           {
@@ -158,9 +158,7 @@ export class MapaComponent implements OnInit {
           },}).addTo(map);
 
         //----------Creamos una variable para poligonos-------
-        var newGeoPol: any = barrioAtraa;
-
-        
+        var newGeoPol: any = barrioAtraa;     
 
         let myLayerOptionsPol = {
           style: function (feature:any) {
@@ -190,7 +188,7 @@ export class MapaComponent implements OnInit {
        
       
         /*=========== OTRA OPCIÓN PARA LLAMAR AL NUESTRO GEOJSON ============*/
-        // NOTE: no puede hacer funcionar importar el archivo geojson
+        // NOTE: no puede hacer funcionar importar el archivo geojson del servidor.
        /* 
         this.http.get(geojson)
           .subscribe((json: any) => {

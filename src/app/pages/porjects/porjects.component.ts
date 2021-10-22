@@ -18,6 +18,7 @@ export class PorjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
 
 }
