@@ -397,7 +397,10 @@ h5{
     .cardsProjects{
         margin-top: 2rem;
         margin-bottom: 1rem;
+        
     }
+
+    
     .tituloEncabezado{
         min-height: 15rem;
        
@@ -405,7 +408,7 @@ h5{
 
     #project img{
         margin: 0 auto;
-        width: 70%;
+        width: 50%;
     }
 
     /*===========GEOGRAPHY MAPA=========*/
@@ -430,7 +433,7 @@ h5{
 
     .bname {
         font-size: 1.5rem;
-        color: white;
+        color: #999999;
         font-weight: bold;
     }
 

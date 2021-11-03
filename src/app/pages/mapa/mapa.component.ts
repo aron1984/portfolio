@@ -196,7 +196,7 @@ export class MapaComponent implements OnInit {
      // REVIEW: Faltaría agregar las coordenadas del mouse, pero no es TAN IMPORTANTE POR AHORA. SALVO PARA UN PROYECTO WEB RELACIONADO A GEOGRAFIA.
 
     
-    //6 - Agregamos coordenadas al mouse
+    // 6 - Agregamos coordenadas al mouse
 
     //L.control.mousePosition().addTo(map);
 

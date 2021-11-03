@@ -8,11 +8,12 @@
     <div class="container">
      
         <div class="cardsProjects">
-            <h3>Design graphyic</h3>
+            <h3>My works</h3>
+            <p>Puedes visitar navegar por las webs de cada carta para ver mi trabajo funcionando.</p>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col" *ngFor="let proyectosA of infoProject.project">
-                    <div class="card h-100">
-                        <img src="../../../assets/img/{{proyectosA.url}}.png" class="card-img-top" alt="{{proyectosA.name}}">
+                    <div class="card h-100 pt-1">
+                        <img src="assets/img/{{proyectosA.url}}.png" class="card-img-top mt-2" alt="{{proyectosA.name}}">
                         <div class="card-body">
                         <h5 class="card-title">{{proyectosA.name}}</h5>
                         <h3 class="card-text">{{proyectosA.category}}</h3>
@@ -29,15 +30,15 @@
                 
             </div>
         </div>
-
-
+    
+        
         <!-- MEJORAR: Tenemos que meter aglunos proyectos de mapa, con diseño, etc.-->
-        <div class="cardsProjects">
+        <!-- <div class="cardsProjects">
             <h3>Geography</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../../../assets/img/tis_p_64_web.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -50,9 +51,11 @@
                 
                 
             </div>
-        </div>
+        </div> -->
 
-        <div class="cardsProjects">
+
+        
+        <!-- <div class="cardsProjects">
             
             <h3>Drawing</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -71,7 +74,7 @@
                 
                 
             </div>
-        </div>
+        </div> -->
         
     </div>
 
