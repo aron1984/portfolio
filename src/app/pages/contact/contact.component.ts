@@ -11,12 +11,12 @@ export class ContactComponent implements OnInit {
 
   public formContact!: FormGroup;
   
-  constructor( private formBuilder: FormBuilder) {
+  constructor( ) {
     
    }
 
   ngOnInit(): void {
-    this.formContact = this.formBuilder.group({
+     /* this.formContact = this.formBuilder.group({
       name: ['', [
         Validators.required,
         Validators.minLength(3)
@@ -29,15 +29,22 @@ export class ContactComponent implements OnInit {
         Validators.required,
         Validators.minLength(10)
       ]]
-    })
+    })  */
   }
 
-  send(): any {
+  /* send(): any {
     console.log("Message sent:")
     console.log(this.formContact.value);
     
-    /*NOTE: */
-    /* REVIEW: investigar cómo hacer que los mensajes se almacenen en la base de datos, o lleguen al corrreo*/
-  }
+
+  } */
  
 }
+
+
+
+/* <form action="https://formsubmit.co/your@email.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form> */
