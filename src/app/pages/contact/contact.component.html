@@ -20,45 +20,51 @@
             </div>
             <div class="col-12 col-md-6 mt-3">
 
-                <form target="_blank" action="https://formsubmit.co/alejoronconi.art@gmail.com" method="POST">
-                    
-                   
-                    <div class="form-group mt-2">
-                            <textarea type="text" id="message" name="message" placeholder="Escribe tu mensaje"  class="form-control" cols="30" rows="5" required></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-    
-                            <!-- ========== INPUT NAME ===========-->
-                            <div class="form-group mt-2">
-                                <input type="text" name="name"  class="form-control" id="name" placeholder="Name" required>
+                <form target="_blank" action="https://formsubmit.co/alejoronconi.art@gmail.com" method="POST" class="row g-3 needs-validation was-validated">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- ========== INPUT MESSAGE ===========-->
+                                <div class="form-group mt-2">
+                                        <textarea type="text" id="message" name="message" placeholder="Escribe tu mensaje"  class="form-control" cols="30" rows="5" required></textarea>
+                                </div>
                             </div>
-    
                         </div>
-                        <div class="col-6">
+
+                        <div class="row">
+                            <div class="col-6">
+    
+                                <!-- ========== INPUT NAME ===========-->
+                                <div class="form-group mt-2">
+                                    <input type="text" name="name"  class="form-control" id="name" placeholder="Name" required>
+                                </div>
+    
+                            </div>
+
+                            <div class="col-6">
     
                             <!-- ========== INPUT LAST NAME ===========-->
-                            <div class="form-group mt-2">
-                               <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
-                            </div>
+                                <div class="form-group mt-2">
+                                 <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
+                                </div>
     
+                            </div>
                         </div>
-    
-                    </div>
 
-                    <div class="row-12">
-                        
-                        <div class="col-12">
-                            <div class="form-group mt-2">
-                                 <input type="email" name="email" class="form-control" id="email" placeholder="Email Address" required>
-                            </div>
-                        </div>                     
-    
-                    </div>
+                    
+
+                        <div class="row">
+                            
+                            <div class="col">
+                                <div class="form-group mt-2">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email Address" required>
+                                </div>
+                            </div>                     
+        
+                        </div>
                    
-                    <div class="row-12">
+                    <div class="row">
                         
-                        <div class="col-12">
+                        <div class="col">
                             <button type="submit" name="sendMessage" id="sendMessage" class="btn btn-dark btn btn-block">Send</button>
                         </div>                     
     
