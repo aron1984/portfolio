@@ -6,12 +6,13 @@ import { PorjectsComponent } from './pages/porjects/porjects.component';
 import { ProfileComponent } from './section/profile/profile.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
+import { CvComponent } from './pages/cv/cv.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home',component: HomeComponent},
-  /*{ path: 'about', component....*/
+  { path: 'cv', component: CvComponent},
   { path: 'readme',component: ReadmeComponent},
   { path: 'projects',component: PorjectsComponent},
   { path: 'geography', component: MapaComponent},

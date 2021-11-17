@@ -17,6 +17,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PorjectsComponent } from './pages/porjects/porjects.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
+import { CvComponent } from './pages/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MapaComponent } from './pages/mapa/mapa.component';
     ContactComponent,
     PorjectsComponent,
     HomeComponent,
-    MapaComponent
+    MapaComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
