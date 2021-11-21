@@ -19,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { CvComponent } from './pages/cv/cv.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,14 +33,16 @@ import { CvComponent } from './pages/cv/cv.component';
     PorjectsComponent,
     HomeComponent,
     MapaComponent,
-    CvComponent
+    CvComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    LeafletModule 
+    LeafletModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

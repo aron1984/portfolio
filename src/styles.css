@@ -164,8 +164,8 @@ nav a{
      
 }
 */
-#profile svg{
-    color:#16c4f0;
+#profile i{
+    color: #1F618D;
 }
 .fotoPerfil{
     width: 6rem;
@@ -181,6 +181,11 @@ h5{
     color: #999999;
     /*font-size: calc(100% + 1vw + 1vh);*/
     
+}
+
+.resaltado{
+    color:#1F618D;
+    font-weight: bold;
 }
 
 
@@ -202,8 +207,8 @@ h5{
       }
     
     .bname {
-        font-size: 1.1rem;
-        color: #4D5656;
+        font-size: 1rem;
+        color: #1F618D;
         font-weight: bold;
     }
     #geolocation{
@@ -426,7 +431,7 @@ h5{
 
     #project img{
         margin: 0 auto;
-        width: 50%;
+        width: 80%;
     }
 
     /*===========GEOGRAPHY MAPA=========*/
@@ -450,8 +455,8 @@ h5{
       }
 
     .bname {
-        font-size: 1.5rem;
-        color: #999999;
+        font-size: 1.1rem;
+        color: #1F618D;
         font-weight: bold;
     }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InfowdService } from 'src/app/services/infowd.service';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',

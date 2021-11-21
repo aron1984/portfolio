@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import * as Mapboxgl from 'mapbox-gl';
 import { environment } from 'src/environments/environment.prod';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-map',
@@ -14,7 +15,7 @@ export class MapComponent implements OnInit {
   mapa1!: Mapboxgl.Map;
   
 
-  constructor() {
+  constructor(private router: Router) {
     
    }
 
