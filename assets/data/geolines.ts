@@ -4,7 +4,7 @@ export var geoRecorrido = {
       {
         "type": "Feature",
         "properties": {
-          "stroke": "#ffee00",
+          "stroke": "#ff0000",
           "stroke-width": 2,
           "stroke-opacity": 1
         },

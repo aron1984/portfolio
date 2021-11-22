@@ -7,7 +7,7 @@ export var barrioAtraa = {
           "stroke": "#ff0000",
           "stroke-width": 2,
           "stroke-opacity": 1,
-          "color": "#29ff5e",
+          "color": "#00ff",
           "fill-opacity": 0.5,
           "name": "Barrio ATRAA III"
         },
